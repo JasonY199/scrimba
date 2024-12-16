@@ -16,7 +16,6 @@ body {
     padding-bottom: 50px;
     display: flex;
     flex-direction: column;
-    width: 90%;
     max-width: 900px;
     margin: 0 auto;
     background-color: var(--site-background-color);
@@ -72,23 +71,38 @@ body {
 }
 
 #activities-section h3 {
-    margin: 0 0 var(--white-spacer) 0;
+    margin: 0;
     font-size: 27px;
     color: var(--main-dark-green);
 }
 
 #activities-wrapper {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
 }
 
 .activity-card {
-    width: 29%;
+    margin-top: 50px;
+    width: 30%;
     text-align: center;
     display: flex;
     flex-direction: column;
     gap: 18px;
     align-items: center;
+}
+
+@media (max-width: 800px) {
+    .activity-card {
+        width: 45%;
+    }
+}
+
+@media (max-width: 470px) {
+    .activity-card {
+        width: 100%;
+    }
 }
 
 .activity-card img {
@@ -112,7 +126,7 @@ body {
 
 #guide-section {
     margin-top: 20px;
-    padding: var(--white-spacer) 30px 0;
+    padding: var(--white-spacer) 40px 0;
     display: flex;
     flex-direction: column;
     align-items: center;
