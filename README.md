@@ -3,7 +3,7 @@
 This is a project from the Scrimba Frontend Developer Career Path. The project is to create a homepage for our hometown. The project is to be completed using HTML and CSS.
 
 ## Project Requirements
-- View the design file given: [Figma Design](requirements_starter_files/design.png)
+- View the design file given: [Figma Design](requirements_starter_files/design_requirement_preview.png)
 - Starter HTML given: [index.html](requirements_starter_files/index.html)
 - Starter CSS given [styles.css](requirements_starter_files/styles.css)
 
