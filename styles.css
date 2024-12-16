@@ -4,7 +4,10 @@
     --hero-secondary-text-color: #2d5330;
     --main-dark-green: #326035;
     --main-light-green: #ceffd5;
+    --main-lighter-black: #425644;
     --main-green-transparent: #ceffd585;
+    --default-border-radius: 10px;
+    --white-spacer: 30px;
 }
 
 body {
@@ -12,9 +15,10 @@ body {
     display: flex;
     flex-direction: column;
     width: 80%;
-    max-width: 700px;
+    max-width: 800px;
     margin: 0 auto;
     background-color: var(--site-background-color);
+    gap: var(--white-spacer);
 }
 
 #hero-section {
@@ -27,16 +31,18 @@ body {
     align-items: center;
     gap: 30px;
     padding: 110px 0;
+    border-radius: 0 0 var(--default-border-radius) var(--default-border-radius);
+    text-align: center;
 }
 
 #hero-section h1 {
     color: var(--hero-main-text-color);
-    font-size: 30px;
+    font-size: 35px;
 }
 
-#hero-section h2 {
+#hero-section h3 {
     color: var(--hero-secondary-text-color);
-    font-size: 15px;
+    font-size: 16px;
 }
 
 #hero-section h1,
@@ -49,8 +55,51 @@ body {
 
 .transparent-box {
     padding: 5px 14px;
-    border-radius: 10px;
+    border-radius: var(--default-border-radius);
     background-color: var(--main-green-transparent);
     box-shadow: 0 0 14px 0px var(--main-green-transparent);
     max-width: 70%;
+}
+
+#activities-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#activities-section h3 {
+    margin: 0 0 var(--white-spacer) 0;
+    font-size: 23px;
+    color: var(--main-dark-green);
+}
+
+#activities-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.activity-card {
+    width: 29%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    align-items: center;
+}
+
+.activity-card img {
+    width: 75%;
+    border-radius: 50%;
+}
+
+.activity-card h4 {
+    margin: 10px 0 0 0;
+    font-size: 18px;
+    color: var(--main-dark-green);
+}
+
+.activity-card p {
+    margin: 0;
+    font-size: 16px;
+    color: var(--main-lighter-black);
 }
