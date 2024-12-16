@@ -1,5 +1,6 @@
 :root {
-    --site-background-color: #deefcf83;
+    --site-background-color: #deefcf1a;
+    --site-background-transparent-color: #deefcf00;
     --hero-main-text-color: #326035;
     --hero-secondary-text-color: #2d5330;
     --main-dark-green: #326035;
@@ -7,18 +8,18 @@
     --main-lighter-black: #425644;
     --main-green-transparent: #ceffd585;
     --default-border-radius: 10px;
-    --white-spacer: 30px;
+    --white-spacer: 40px;
 }
 
 body {
     margin: 0;
+    padding-bottom: 50px;
     display: flex;
     flex-direction: column;
     width: 80%;
-    max-width: 800px;
+    max-width: 900px;
     margin: 0 auto;
     background-color: var(--site-background-color);
-    gap: var(--white-spacer);
 }
 
 #hero-section {
@@ -31,7 +32,6 @@ body {
     align-items: center;
     gap: 30px;
     padding: 110px 0;
-    border-radius: 0 0 var(--default-border-radius) var(--default-border-radius);
     text-align: center;
 }
 
@@ -62,14 +62,17 @@ body {
 }
 
 #activities-section {
+    border-top: 2px solid black;
+    padding: var(--white-spacer) 30px 0;
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-image: linear-gradient(var(--main-light-green), var(--site-background-transparent-color));
 }
 
 #activities-section h3 {
     margin: 0 0 var(--white-spacer) 0;
-    font-size: 23px;
+    font-size: 27px;
     color: var(--main-dark-green);
 }
 
@@ -88,8 +91,10 @@ body {
 }
 
 .activity-card img {
-    width: 75%;
+    width: 85%;
     border-radius: 50%;
+    border: 2px solid var(--main-dark-green);
+    box-shadow: 0 0 14px 0px var(--main-dark-green);
 }
 
 .activity-card h4 {
@@ -102,4 +107,45 @@ body {
     margin: 0;
     font-size: 16px;
     color: var(--main-lighter-black);
+}
+
+#guide-section {
+    padding: var(--white-spacer) 30px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.guide-card {
+    background-color: var(--main-light-green);
+    color: var(--main-dark-green);
+    padding: 25px;
+    width: 100%;
+    max-width: 380px;
+    display: flex;
+    border-radius: var(--default-border-radius);
+}
+
+.guide-details {
+    padding-left: 25px;
+}
+
+.guide-card img {
+    border-radius: var(--default-border-radius);
+    width: 40%;
+    object-fit: cover;
+    object-position: 45%;
+}
+
+.guide-details h3 {
+    font-size: 25px;
+}
+
+.guide-details h4 {
+    font-size: 20px;
+}
+
+.guide-details p {
+    font-size: 14px;
 }
