@@ -25,8 +25,8 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 20px;
-    height: 280px;
+    gap: 30px;
+    padding: 110px 0;
 }
 
 #hero-section h1 {
