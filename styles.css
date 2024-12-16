@@ -141,7 +141,7 @@ body {
     border-radius: var(--default-border-radius);
     width: 40%;
     object-fit: cover;
-    object-position: 45%;
+    object-position: 48%;
 }
 
 .guide-details h3 {
