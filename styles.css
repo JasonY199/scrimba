@@ -127,6 +127,7 @@ body {
     max-width: 450px;
     display: flex;
     border-radius: var(--default-border-radius);
+    box-shadow: 5px 5px 20px 0px #8b8b8b;
 }
 
 .guide-details {
