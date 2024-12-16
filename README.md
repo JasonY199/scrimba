@@ -1,4 +1,4 @@
-# Hometown Homepage - Scrimba Project
+# Hometown Homepage
 
 This is a project from the Scrimba Frontend Developer Career Path. The project is to create a homepage for our hometown. The project is to be completed using HTML and CSS.
 
