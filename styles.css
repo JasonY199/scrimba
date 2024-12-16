@@ -1,11 +1,11 @@
-/**
-RED: #E63946
-LIGHT: #F1FAEE
-AQUA: #A8DADC
-LIGHT BLUE: #457B9D
-DARK BLUE: #1D3557
-
-*/
+:root {
+    --site-background-color: #deefcf83;
+    --hero-main-text-color: #326035;
+    --hero-secondary-text-color: #2d5330;
+    --main-dark-green: #326035;
+    --main-light-green: #ceffd5;
+    --main-green-transparent: #ceffd585;
+}
 
 body {
     margin: 0;
@@ -14,9 +14,43 @@ body {
     width: 80%;
     max-width: 700px;
     margin: 0 auto;
+    background-color: var(--site-background-color);
 }
 
 #hero-section {
     background-image: url("images/asheville.webp");
+    background-position: center;
     background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    height: 280px;
+}
+
+#hero-section h1 {
+    color: var(--hero-main-text-color);
+    font-size: 30px;
+}
+
+#hero-section h2 {
+    color: var(--hero-secondary-text-color);
+    font-size: 15px;
+}
+
+#hero-section h1,
+#hero-section h2 {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    text-shadow: 0 0 2px #ffffff6e;
+}
+
+.transparent-box {
+    padding: 5px 14px;
+    border-radius: 10px;
+    background-color: var(--main-green-transparent);
+    box-shadow: 0 0 14px 0px var(--main-green-transparent);
+    max-width: 70%;
 }
