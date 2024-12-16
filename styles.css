@@ -1,5 +1,4 @@
 /**
-Palette: https://scrimba.com/links/hometown-palette
 RED: #E63946
 LIGHT: #F1FAEE
 AQUA: #A8DADC
@@ -10,9 +9,14 @@ DARK BLUE: #1D3557
 
 body {
     margin: 0;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    max-width: 700px;
+    margin: 0 auto;
 }
 
-img {
-    width: 100px;
+#hero-section {
+    background-image: url("images/asheville.webp");
+    background-size: cover;
 }
