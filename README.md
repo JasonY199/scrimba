@@ -32,7 +32,7 @@ Here is a screenshot of the **design requirement**:
 
 ## Live Demo
 
-You can view the live version of the project here: [Live Demo Link](jasony199.github.io/scrimba-hometown_homepage/)
+You can view the live version of the project here: [Live Demo Link](https://jasony199.github.io/scrimba-hometown-homepage/)
 
 
 ## Screenshots
