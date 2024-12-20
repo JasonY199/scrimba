@@ -17,7 +17,7 @@ body {
   background-color: var(--site-background-color);
 }
 
-.scoreboard-container {
+#scoreboard-container {
   display: flex;
   justify-content: space-evenly;
 }
@@ -27,5 +27,25 @@ body {
   font-family: Verdana, sans-serif;
   color: var(--title-text-color);
   font-weight: 600;
-  letter-spacing: 0.2rem;
+  letter-spacing: 0.4rem;
+  text-align: center;
+  font-size: 1.6rem;
+  padding: 0;
+  margin: 30px 0 10px;
+}
+
+.score-background {
+  background-color: var(--scoreboard-background-color);
+  width: 150px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.score {
+  color: var(--score-text-color);
+  padding: 0;
+  margin: 0;
+  font-size: 5.5rem;
 }
