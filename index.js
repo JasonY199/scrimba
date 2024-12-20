@@ -4,10 +4,16 @@ guestScoreEl = document.getElementById("guest-score");
 homeScore = 0;
 guestScore = 0;
 
-// Initial score on screen
+function addScore(team, amount) {
+  if (team === "home") {
+    homeScore += amount;
+    homeScoreEl.textContent = homeScore;
+  } else if (team === "guest") {
+    guestScore += amount;
+    guestScoreEl.textContent = guestScore;
+  }
+}
+
+// Set initial score on screen at game start
 homeScoreEl.textContent = homeScore;
 guestScoreEl.textContent = guestScore;
-
-function addScore(team, amount) {
-  console.log(team, amount);
-}
