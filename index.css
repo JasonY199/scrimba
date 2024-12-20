@@ -1,3 +1,11 @@
+:root {
+  --site-background-color: #1b244a;
+  --scoreboard-background-color: #080001;
+  --score-text-color: #f94f6d;
+  --title-text-color: #eeeeee;
+  --button-color: #9aabd8;
+}
+
 @font-face {
   src: url("cursed-timer-ulil-font/CursedTimerUlil-Aznm.ttf") format("truetype");
   font-family: "CursedTimer";
@@ -6,14 +14,18 @@
 body {
   margin: 0;
   font-family: "CursedTimer", sans-serif;
+  background-color: var(--site-background-color);
 }
 
-.container {
+.scoreboard-container {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 
 /* Regular font for the Home and Guest text */
-h3 {
+.team-title {
   font-family: Verdana, sans-serif;
+  color: var(--title-text-color);
+  font-weight: 600;
+  letter-spacing: 0.2rem;
 }
