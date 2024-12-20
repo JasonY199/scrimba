@@ -1,0 +1,19 @@
+@font-face {
+  src: url("cursed-timer-ulil-font/CursedTimerUlil-Aznm.ttf") format("truetype");
+  font-family: "CursedTimer";
+}
+
+body {
+  margin: 0;
+  font-family: "CursedTimer", sans-serif;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+}
+
+/* Regular font for the Home and Guest text */
+h3 {
+  font-family: Verdana, sans-serif;
+}
