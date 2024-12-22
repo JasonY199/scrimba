@@ -1,11 +1,16 @@
 import { passCharacters } from "./password-chars.js";
 
-// Default pwd generation settings
-let pwdLength = 10;
+// Default settings
+let passwordLengths = [8, 12, 16];
+let darkMode = true;
+let pwdLength = passwordLengths[1];
 let useLowerCase = true;
 let useUpperCase = true;
 let useNumbers = true;
 let useSpecialChars = true;
+let shortPwd = false;
+let mediumPwd = true;
+let longPwd = false;
 
 // DOM elements
 let generatePasswordsBtn = document.getElementById("generate-passwords");
@@ -68,3 +73,36 @@ function copyPassword(passToCopy) {
       console.error("Failed to copy text: ", err);
     });
 }
+
+// DOM settings elements
+let darkModeCheckbox = document.getElementById("dark-mode");
+let useLowerCheckbox = document.getElementById("use-lower-checkbox");
+let useUpperCheckbox = document.getElementById("use-upper-checkbox");
+let useNumbersCheckbox = document.getElementById("use-numbers-checkbox");
+let useSymbolsCheckbox = document.getElementById("use-symbols-checkbox");
+let shortPwdCheckbox = document.getElementById("short-password-checkbox");
+let mediumPwdCheckbox = document.getElementById("medium-password-checkbox");
+let longPwdCheckbox = document.getElementById("long-password-checkbox");
+
+// Set all default settings to screen
+darkModeCheckbox.checked = darkMode;
+useLowerCheckbox.checked = useLowerCase;
+useUpperCheckbox.checked = useUpperCase;
+useNumbersCheckbox.checked = useNumbers;
+useSymbolsCheckbox.checked = useSpecialChars;
+shortPwdCheckbox.checked = shortPwd;
+mediumPwdCheckbox.checked = mediumPwd;
+mediumPwdCheckbox.disabled = true; // Disable unchecking before shortPwd or longPwd is checked
+longPwdCheckbox.checked = longPwd;
+
+// Event listener for dark mode checkbox
+darkModeCheckbox.addEventListener("change", function () {
+  const root = document.documentElement; // Get the root element
+  if (darkModeCheckbox.checked) {
+    darkMode = true;
+    root.style.setProperty("--site-background-color", "black");
+  } else {
+    darkMode = false;
+    root.style.setProperty("--site-background-color", "white");
+  }
+});
