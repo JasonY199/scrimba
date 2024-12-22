@@ -5,6 +5,9 @@
   --main-green-color: #4adf86;
   --secondary-green-color: #10b981;
   --light-gray-color: #d5d4d8;
+  --divider-color: #2f3e53;
+  --password-box-color: #273549;
+  --password-text-color: #55f991;
 }
 
 body {
@@ -13,7 +16,6 @@ body {
   font-family: "Karla", serif;
   font-optical-sizing: auto;
   font-style: normal;
-  color: white;
 }
 
 #header {
@@ -46,7 +48,11 @@ body {
   flex-direction: column;
 }
 
-.green-heading {
+.first-heading {
+  color: white;
+}
+
+.second-heading {
   color: var(--main-green-color);
 }
 
@@ -55,7 +61,7 @@ body {
   margin: 0;
 }
 
-.content-wrapper p {
+.subheading {
   font-size: 1.4rem;
   margin: 1rem 0 0;
   color: var(--light-gray-color);
@@ -73,4 +79,36 @@ body {
   font-size: 1.2rem;
   font-weight: 400;
   font-family: inherit;
+}
+
+#show-results {
+  /* display: none; Uncomment this line to hide the results */
+  margin: 0;
+}
+
+.section-divider {
+  margin-top: 2.5rem;
+  border-top: 1px solid var(--divider-color);
+}
+
+#passwords-wrapper {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.password-box {
+  width: 47%;
+  background-color: var(--password-box-color);
+  border-radius: 0.3rem;
+}
+
+.show-password {
+  cursor: pointer;
+  color: var(--password-text-color);
+  font-size: 0.7rem;
+  font-weight: 500;
+  margin: 0;
+  text-align: center;
+  padding: 0.6rem 0;
 }
