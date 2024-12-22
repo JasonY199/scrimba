@@ -160,3 +160,34 @@ body {
 .checkbox {
   border: none;
 }
+
+@media screen and (max-width: 490px) {
+  #header h1 {
+    font-size: 1.65rem;
+  }
+  .content-wrapper {
+    padding: 2.5rem 1.5rem;
+  }
+  .content-wrapper h2 {
+    font-size: 1.8rem;
+  }
+  .primary-heading,
+  .secondary-heading,
+  .subheading {
+    text-align: center;
+  }
+  .content-wrapper button {
+    align-self: center;
+  }
+  #passwords-wrapper {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
+  .password-box {
+    width: 100%;
+  }
+  .setting-text {
+    font-size: 0.9rem;
+  }
+}
