@@ -82,8 +82,8 @@ body {
   font-family: inherit;
 }
 
-#show-results {
-  /* display: none; Uncomment this line to hide the results */
+#display-results {
+  display: none;
   margin: 0;
 }
 
@@ -107,7 +107,7 @@ body {
 .show-password {
   cursor: pointer;
   color: var(--password-text-color);
-  font-size: 0.7rem;
+  font-size: 0.9rem;
   font-weight: 500;
   margin: 0;
   text-align: center;
