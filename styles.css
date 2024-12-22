@@ -28,6 +28,7 @@ body {
   color: var(--main-green-color);
   padding: 0;
   margin: 0;
+  text-shadow: 0 0 0.9rem rgba(0, 0, 0, 0.7);
 }
 
 .container {
@@ -62,7 +63,7 @@ body {
 
 .content-wrapper button {
   cursor: pointer;
-  padding: 0.5rem 1rem;
+  padding: 0.6rem 1rem;
   margin-top: 3.5rem;
   background-color: var(--secondary-green-color);
   align-self: start;
