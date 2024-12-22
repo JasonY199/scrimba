@@ -68,11 +68,11 @@ body {
   flex-direction: column;
 }
 
-.first-heading {
+.primary-heading {
   color: white;
 }
 
-.second-heading {
+.secondary-heading {
   color: var(--main-green-color);
 }
 
@@ -107,7 +107,6 @@ body {
 }
 
 .section-divider {
-  margin-top: 2.5rem;
   border-top: 1px solid var(--divider-color);
 }
 
@@ -131,4 +130,31 @@ body {
   margin: 0;
   text-align: center;
   padding: 0.6rem 0;
+}
+
+#setting-title {
+  margin-bottom: 1.4rem;
+}
+
+#settings-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.settings-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.8rem 3%;
+}
+
+.setting-text {
+  font-size: 1.13rem;
+  color: var(--light-gray-color);
+  padding: 0;
+  margin: 0;
+}
+
+.checkbox {
+  border: none;
 }

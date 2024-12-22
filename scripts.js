@@ -16,6 +16,7 @@ let showPassTwo = document.getElementById("show-pass-two");
 // Event listener for the generate passwords button
 generatePasswordsBtn.addEventListener("click", function () {
   displayResults.style.display = "inline-block";
+  displayResults.style.marginTop = "2.5rem";
   showPassOne.textContent = generatePassword();
   showPassTwo.textContent = generatePassword();
 });
