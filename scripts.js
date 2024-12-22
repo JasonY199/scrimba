@@ -43,20 +43,16 @@ mediumPwdCheckbox.checked = settings.passLengths.mediumPwd.enabled;
 longPwdCheckbox.checked = settings.passLengths.longPwd.enabled;
 
 // Event listener for the generate passwords button
-generatePasswordsBtn.addEventListener("click", function () {
+generatePasswordsBtn.addEventListener("click", () => {
+  updateUINewPassword();
+});
+
+function updateUINewPassword() {
   displayResults.style.display = "inline-block";
   displayResults.style.marginTop = "2.5rem";
   showPassOne.textContent = generatePassword();
   showPassTwo.textContent = generatePassword();
-});
-
-// Event listeners for copy password on click
-showPassOne.addEventListener("click", () =>
-  copyPassword(showPassOne.textContent)
-);
-showPassTwo.addEventListener("click", () =>
-  copyPassword(showPassTwo.textContent)
-);
+}
 
 // Generate password
 function generatePassword() {
@@ -107,6 +103,14 @@ function copyPassword(passToCopy) {
       console.error("Failed to copy text: ", err);
     });
 }
+
+// Event listeners for copy password on click
+showPassOne.addEventListener("click", () =>
+  copyPassword(showPassOne.textContent)
+);
+showPassTwo.addEventListener("click", () =>
+  copyPassword(showPassTwo.textContent)
+);
 
 function checkboxesChecked(groupType) {
   let amountChecked = 0;
@@ -162,6 +166,7 @@ function handleCharSettingChange(checkbox, settingKey) {
       checkbox.checked = true;
     } else {
       settings.useChars[settingKey] = checkbox.checked;
+      updateUINewPassword(); // Generate password with new settings
     }
   });
 }
@@ -197,6 +202,7 @@ function handlePassLengthSettingChange(checkbox, settingKey) {
       } else {
         console.error("Invalid setting key");
       }
+      updateUINewPassword(); // Generate password with new settings
     } else {
       // Don't allow user to uncheck a checkbox
       checkbox.checked = true;
