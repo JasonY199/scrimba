@@ -1,7 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap");
+
 :root {
-  --background-color: gray; /* TODO placeholder color */
+  --site-background-color: #000000;
+  --container-background-color: #1f2937;
+  --dark-green-color: #4adf86;
 }
 
 body {
   margin: 0;
+  background-color: var(--site-background-color);
+  font-family: "Karla", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  color: white;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 80vw;
+  border: 2px solid white;
+  margin: 0 auto;
+  background-color: var(--container-background-color);
+}
+
+#page-title {
+  text-align: center;
+  font-size: 2.2rem;
+  margin: 1.7rem 0;
 }
