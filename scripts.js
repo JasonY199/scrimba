@@ -171,3 +171,40 @@ handleCharSettingChange(useLowerCheckbox, "useLowerCase");
 handleCharSettingChange(useUpperCheckbox, "useUpperCase");
 handleCharSettingChange(useNumbersCheckbox, "useNumbers");
 handleCharSettingChange(useSymbolsCheckbox, "useSpecialChars");
+
+// Generic event listener for password length setting checkboxes
+function handlePassLengthSettingChange(checkbox, settingKey) {
+  checkbox.addEventListener("change", function () {
+    if (checkbox.checked) {
+      // User checking checkbox
+      settings.passLengths[settingKey].enabled = true;
+      // Set other checkboxes to false
+      if (settingKey === "shortPwd") {
+        mediumPwdCheckbox.checked = false;
+        longPwdCheckbox.checked = false;
+        settings.passLengths.mediumPwd.enabled = false;
+        settings.passLengths.longPwd.enabled = false;
+      } else if (settingKey === "mediumPwd") {
+        shortPwdCheckbox.checked = false;
+        longPwdCheckbox.checked = false;
+        settings.passLengths.shortPwd.enabled = false;
+        settings.passLengths.longPwd.enabled = false;
+      } else if (settingKey === "longPwd") {
+        shortPwdCheckbox.checked = false;
+        mediumPwdCheckbox.checked = false;
+        settings.passLengths.shortPwd.enabled = false;
+        settings.passLengths.mediumPwd.enabled = false;
+      } else {
+        console.error("Invalid setting key");
+      }
+    } else {
+      // Don't allow user to uncheck a checkbox
+      checkbox.checked = true;
+    }
+  });
+}
+
+// Applying the password length setting function to all length checkboxes
+handlePassLengthSettingChange(shortPwdCheckbox, "shortPwd");
+handlePassLengthSettingChange(mediumPwdCheckbox, "mediumPwd");
+handlePassLengthSettingChange(longPwdCheckbox, "longPwd");
