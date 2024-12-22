@@ -1,22 +1,46 @@
 import { passCharacters } from "./password-chars.js";
 
-// Default settings
-let passwordLengths = [8, 12, 16];
-let darkMode = true;
-let pwdLength = passwordLengths[1];
-let useLowerCase = true;
-let useUpperCase = true;
-let useNumbers = true;
-let useSpecialChars = true;
-let shortPwd = false;
-let mediumPwd = true;
-let longPwd = false;
-
 // DOM elements
 let generatePasswordsBtn = document.getElementById("generate-passwords");
 let displayResults = document.getElementById("display-results");
 let showPassOne = document.getElementById("show-pass-one");
 let showPassTwo = document.getElementById("show-pass-two");
+
+// DOM settings elements
+let darkModeCheckbox = document.getElementById("dark-mode");
+let useLowerCheckbox = document.getElementById("use-lower-checkbox");
+let useUpperCheckbox = document.getElementById("use-upper-checkbox");
+let useNumbersCheckbox = document.getElementById("use-numbers-checkbox");
+let useSymbolsCheckbox = document.getElementById("use-symbols-checkbox");
+let shortPwdCheckbox = document.getElementById("short-password-checkbox");
+let mediumPwdCheckbox = document.getElementById("medium-password-checkbox");
+let longPwdCheckbox = document.getElementById("long-password-checkbox");
+
+// Default settings
+let settings = {
+  darkMode: true,
+  useChars: {
+    useLowerCase: true,
+    useUpperCase: true,
+    useNumbers: true,
+    useSpecialChars: true,
+  },
+  passLengths: {
+    shortPwd: { enabled: false, length: 8 },
+    mediumPwd: { enabled: true, length: 12 },
+    longPwd: { enabled: false, length: 16 },
+  },
+};
+
+// Set all default settings to screen
+darkModeCheckbox.checked = settings.darkMode;
+useLowerCheckbox.checked = settings.useChars.useLowerCase;
+useUpperCheckbox.checked = settings.useChars.useUpperCase;
+useNumbersCheckbox.checked = settings.useChars.useNumbers;
+useSymbolsCheckbox.checked = settings.useChars.useSpecialChars;
+shortPwdCheckbox.checked = settings.passLengths.shortPwd.enabled;
+mediumPwdCheckbox.checked = settings.passLengths.mediumPwd.enabled;
+longPwdCheckbox.checked = settings.passLengths.longPwd.enabled;
 
 // Event listener for the generate passwords button
 generatePasswordsBtn.addEventListener("click", function () {
@@ -74,35 +98,28 @@ function copyPassword(passToCopy) {
     });
 }
 
-// DOM settings elements
-let darkModeCheckbox = document.getElementById("dark-mode");
-let useLowerCheckbox = document.getElementById("use-lower-checkbox");
-let useUpperCheckbox = document.getElementById("use-upper-checkbox");
-let useNumbersCheckbox = document.getElementById("use-numbers-checkbox");
-let useSymbolsCheckbox = document.getElementById("use-symbols-checkbox");
-let shortPwdCheckbox = document.getElementById("short-password-checkbox");
-let mediumPwdCheckbox = document.getElementById("medium-password-checkbox");
-let longPwdCheckbox = document.getElementById("long-password-checkbox");
-
-// Set all default settings to screen
-darkModeCheckbox.checked = darkMode;
-useLowerCheckbox.checked = useLowerCase;
-useUpperCheckbox.checked = useUpperCase;
-useNumbersCheckbox.checked = useNumbers;
-useSymbolsCheckbox.checked = useSpecialChars;
-shortPwdCheckbox.checked = shortPwd;
-mediumPwdCheckbox.checked = mediumPwd;
-mediumPwdCheckbox.disabled = true; // Disable unchecking before shortPwd or longPwd is checked
-longPwdCheckbox.checked = longPwd;
-
 // Event listener for dark mode checkbox
 darkModeCheckbox.addEventListener("change", function () {
   const root = document.documentElement; // Get the root element
   if (darkModeCheckbox.checked) {
-    darkMode = true;
-    root.style.setProperty("--site-background-color", "black");
+    root.style.setProperty("--site-background-color", "#111721");
+    root.style.setProperty("--variable-text-color", "white");
+    root.style.setProperty("--content-background-color", "#1f2937");
+    root.style.setProperty("--main-green-color", "#4adf86");
+    root.style.setProperty("--secondary-green-color", "#10b981");
+    root.style.setProperty("--light-gray-color", "#d5d4d8");
+    root.style.setProperty("--divider-color", "#2f3e53");
+    root.style.setProperty("--password-box-color", "#273549");
+    root.style.setProperty("--password-text-color", "#55f991");
   } else {
-    darkMode = false;
-    root.style.setProperty("--site-background-color", "white");
+    root.style.setProperty("--site-background-color", "#7eb99d");
+    root.style.setProperty("--variable-text-color", "black");
+    root.style.setProperty("--content-background-color", "#ECFDF5");
+    root.style.setProperty("--main-green-color", "#10B981");
+    root.style.setProperty("--secondary-green-color", "#10b981");
+    root.style.setProperty("--light-gray-color", "#6B7280");
+    root.style.setProperty("--divider-color", "#D5D4D8");
+    root.style.setProperty("--password-box-color", "#273549");
+    root.style.setProperty("--password-text-color", "#5DEF92");
   }
 });

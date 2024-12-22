@@ -1,7 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap");
 
 :root {
-  --site-background-color: black;
+  --site-background-color: #111721;
+  --variable-text-color: white;
   --content-background-color: #1f2937;
   --main-green-color: #4adf86;
   --secondary-green-color: #10b981;
@@ -70,7 +71,7 @@ body {
 }
 
 .primary-heading {
-  color: white;
+  color: var(--variable-text-color);
 }
 
 .secondary-heading {
