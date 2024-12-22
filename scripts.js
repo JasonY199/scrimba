@@ -64,26 +64,36 @@ function generatePassword() {
   let password = "";
 
   // Add characters to availableChars array based on user settings
-  if (useLowerCase) {
+  if (settings.useChars.useLowerCase) {
     availableChars.push(...passCharacters.lowercase);
   }
-  if (useUpperCase) {
+  if (settings.useChars.useUpperCase) {
     availableChars.push(...passCharacters.uppercase);
   }
-  if (useNumbers) {
+  if (settings.useChars.useNumbers) {
     availableChars.push(...passCharacters.numbers);
   }
-  if (useSpecialChars) {
+  if (settings.useChars.useSpecialChars) {
     availableChars.push(...passCharacters.special);
   }
 
   // Generate password
-  for (let i = 0; i < pwdLength; i++) {
+  for (let i = 0; i < getPwdLength(); i++) {
     let randomIndex = Math.floor(Math.random() * availableChars.length);
     password += availableChars[randomIndex];
   }
 
   return password;
+}
+
+// Get password length
+function getPwdLength() {
+  if (settings.passLengths.shortPwd.enabled)
+    return settings.passLengths.shortPwd.length;
+  if (settings.passLengths.mediumPwd.enabled)
+    return settings.passLengths.mediumPwd.length;
+  if (settings.passLengths.longPwd.enabled)
+    return settings.passLengths.longPwd.length;
 }
 
 // Copy password to clipboard
@@ -96,6 +106,23 @@ function copyPassword(passToCopy) {
     .catch((err) => {
       console.error("Failed to copy text: ", err);
     });
+}
+
+function checkboxesChecked(groupType) {
+  let amountChecked = 0;
+
+  if (groupType === "charTypes") {
+    if (settings.useChars.useLowerCase) amountChecked++;
+    if (settings.useChars.useUpperCase) amountChecked++;
+    if (settings.useChars.useNumbers) amountChecked++;
+    if (settings.useChars.useSpecialChars) amountChecked++;
+  }
+  if (groupType === "passLengths") {
+    if (settings.passLengths.shortPwd) amountChecked++;
+    if (settings.passLengths.mediumPwd) amountChecked++;
+    if (settings.passLengths.longPwd) amountChecked++;
+  }
+  return amountChecked;
 }
 
 // Event listener for dark mode checkbox
@@ -123,3 +150,24 @@ darkModeCheckbox.addEventListener("change", function () {
     root.style.setProperty("--password-text-color", "#5DEF92");
   }
 });
+
+// Generic event listener for char setting checkboxes
+function handleCharSettingChange(checkbox, settingKey) {
+  checkbox.addEventListener("change", function () {
+    // User unchecking checkbox and has only 1 checked
+    if (!checkbox.checked && checkboxesChecked("charTypes") < 2) {
+      console.log(
+        `Cannot uncheck ${settingKey} checkbox, must have at least 1 checked`
+      );
+      checkbox.checked = true;
+    } else {
+      settings.useChars[settingKey] = checkbox.checked;
+    }
+  });
+}
+
+// Applying the char setting function to all char checkboxes
+handleCharSettingChange(useLowerCheckbox, "useLowerCase");
+handleCharSettingChange(useUpperCheckbox, "useUpperCase");
+handleCharSettingChange(useNumbersCheckbox, "useNumbers");
+handleCharSettingChange(useSymbolsCheckbox, "useSpecialChars");
