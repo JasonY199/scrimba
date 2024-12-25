@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Basketball Scoreboard</title>
+  </head>
+  <body>
+    <h1 id="app-title">
+      Basketball <br />
+      Game Score
+    </h1>
+    <div id="scoreboard-container">
+      <div class="team-container">
+        <h3 class="team-title">HOME</h3>
+        <div class="score-background">
+          <p id="home-score" class="score"></p>
+        </div>
+        <div class="increase-score-container">
+          <button onclick="addScore('home', 1)" class="increase-score-btn">
+            +1
+          </button>
+          <button onclick="addScore('home', 2)" class="increase-score-btn">
+            +2
+          </button>
+          <button onclick="addScore('home', 3)" class="increase-score-btn">
+            +3
+          </button>
+        </div>
+      </div>
+      <div class="team-container">
+        <h3 class="team-title">GUEST</h3>
+        <div class="score-background">
+          <p id="guest-score" class="score"></p>
+        </div>
+        <div class="increase-score-container">
+          <button onclick="addScore('guest', 1)" class="increase-score-btn">
+            +1
+          </button>
+          <button onclick="addScore('guest', 2)" class="increase-score-btn">
+            +2
+          </button>
+          <button onclick="addScore('guest', 3)" class="increase-score-btn">
+            +3
+          </button>
+        </div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>

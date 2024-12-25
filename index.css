@@ -1,0 +1,89 @@
+:root {
+  --site-background-color: #1b244a;
+  --scoreboard-background-color: #080001;
+  --score-text-color: #f94f6d;
+  --title-text-color: #eeeeee;
+  --button-color: #9aabd8;
+}
+
+@font-face {
+  src: url("cursed-timer-ulil-font/CursedTimerUlil-Aznm.ttf") format("truetype");
+  font-family: "CursedTimer";
+}
+
+body {
+  margin: 0;
+  font-family: "CursedTimer", sans-serif;
+  background-color: var(--site-background-color);
+}
+
+#app-title {
+  color: var(--title-text-color);
+  text-align: center;
+  margin: 20px auto;
+  font-size: 2.5rem;
+  padding: 0 10px;
+}
+
+#scoreboard-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+/* Display scores in column on smaller screens */
+@media screen and (max-width: 500px) {
+  #scoreboard-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* Regular font for the Home and Guest text */
+.team-title {
+  font-family: Verdana, sans-serif;
+  color: var(--title-text-color);
+  font-weight: 600;
+  letter-spacing: 0.4rem;
+  text-align: center;
+  font-size: 1.6rem;
+  padding: 0;
+  margin: 10px 0;
+}
+
+.score-background {
+  background-color: var(--scoreboard-background-color);
+  width: 200px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.score {
+  color: var(--score-text-color);
+  padding: 0;
+  margin: 0;
+  font-size: 5.5rem;
+}
+
+.increase-score-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 15px 0 30px;
+}
+
+.increase-score-btn {
+  border: 1.5px solid var(--button-color);
+  border-color: var(--button-color);
+  color: var(--button-color);
+  border-radius: 7px;
+  padding: 15px;
+  font-family: inherit;
+  font-size: 1.2rem;
+  background-color: transparent;
+}
+
+.increase-score-btn:hover {
+  background-color: var(--button-color);
+  color: var(--site-background-color);
+}
