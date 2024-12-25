@@ -33,7 +33,7 @@ Here is a screenshot of the **design requirement**:
 
 ## Live Demo
 
-You can view the live version of the project here: [Live Demo Link](https://jason-scrimba.netlify.app/asheville-homepage/)
+You can view the live version of the project here: [Live Demo Link](https://scrimba.jasony.dev/asheville-homepage/)
 
 ## Screenshots
 

@@ -22,7 +22,7 @@ This is an interactive password generator project completed as part of the Scrim
 
 ## Live Demo
 
-You can view the live version of the project here: [Live Demo Link](https://jason-scrimba.netlify.app/password-generator/)
+You can view the live version of the project here: [Live Demo Link](https://scrimba.jasony.dev/password-generator/)
 
 ## Screenshots
 

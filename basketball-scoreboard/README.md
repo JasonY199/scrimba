@@ -13,7 +13,7 @@ Although a simple project, it was a good introduction to using javascript to upd
 
 ## Live Demo
 
-You can view the live version of the project here: [Live Demo Link](https://jason-scrimba.netlify.app/basketball-scoreboard/)
+You can view the live version of the project here: [Live Demo Link](https://scrimba.jasony.dev/basketball-scoreboard/)
 
 ## Screenshots
 
