@@ -1,8 +1,9 @@
-# Hometown Homepage
+# Asheville Homepage
 
 This is a project from the Scrimba Frontend Developer Career Path. The project is to create a homepage for our hometown. The project is to be completed using HTML and CSS.
 
 ## Project Requirements
+
 - View the design file given: [Figma Design](requirements_starter_files/design_requirement_preview.png) (also below this section)
 - Starter HTML given: [index.html](requirements_starter_files/index.html)
 - Starter CSS given [styles.css](requirements_starter_files/styles.css)
@@ -32,26 +33,27 @@ Here is a screenshot of the **design requirement**:
 
 ## Live Demo
 
-You can view the live version of the project here: [Live Demo Link](https://jasony199.github.io/scrimba-hometown-homepage/)
-
+You can view the live version of the project here: [Live Demo Link](https://jason-scrimba.netlify.app/asheville-homepage/)
 
 ## Screenshots
 
 ### Homepage - Large Screen
+
 <div align="center">
   <img src="screenshots/homepage_large.png" alt="Homepage - Large Screen" width="400px">
 </div>
 
 ### Homepage - Medium Screen
+
 <div align="center">
   <img src="screenshots/homepage_medium.png" alt="Homepage - Medium Screen" width="300px">
 </div>
 
 ### Homepage - Small Screen
+
 <div align="center">
   <img src="screenshots/homepage_small.png" alt="Homepage - Small Screen" width="200px">
 </div>
-
 
 ## Credits
 

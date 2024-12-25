@@ -11,6 +11,10 @@ Although a simple project, it was a good introduction to using javascript to upd
 - I used javascript functions for the onclick event listeners that passed parameters to the functions to update the score.
 - Responsive design for smaller screen sizes. The app will display the score in a vertical layout for smaller screens.
 
+## Live Demo
+
+You can view the live version of the project here: [Live Demo Link](https://jason-scrimba.netlify.app/basketball-scoreboard/)
+
 ## Screenshots
 
 ### Desktop

@@ -20,12 +20,16 @@ This is an interactive password generator project completed as part of the Scrim
 - **CSS**: Styling and layout.
 - **JavaScript**: Logic for password generation and interactivity.
 
+## Live Demo
+
+You can view the live version of the project here: [Live Demo Link](https://jason-scrimba.netlify.app/password-generator/)
+
 ## Screenshots
 
 - **Desktop View**
-  - [Desktop Screenshot](#)
+  - to be added
 - **Mobile View**
-  - [Mobile Screenshot](#)
+  - to be added
 
 ## Instructions to Use
 
@@ -35,4 +39,5 @@ This is an interactive password generator project completed as part of the Scrim
 4. Toggle between Dark/Light mode in the application settings for your preferred display.
 
 ---
+
 Credits to Scrimba for the idea behind this project and inspiration.
