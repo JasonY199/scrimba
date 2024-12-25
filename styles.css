@@ -1,0 +1,193 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap");
+
+:root {
+  --site-background-color: #111721;
+  --variable-text-color: white;
+  --content-background-color: #1f2937;
+  --main-green-color: #4adf86;
+  --secondary-green-color: #10b981;
+  --light-gray-color: #d5d4d8;
+  --divider-color: #2f3e53;
+  --password-box-color: #273549;
+  --password-text-color: #55f991;
+}
+
+body {
+  margin: 0;
+  background-color: var(--site-background-color);
+  font-family: "Karla", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+#header,
+#footer {
+  background-color: var(--content-background-color);
+  margin: 0 auto;
+  width: 90vw;
+  text-align: center;
+  color: var(--main-green-color);
+  text-shadow: 0.1rem 0.1rem 0.4rem rgba(255, 255, 255, 0.15);
+}
+
+#header {
+  border-radius: 0 0 1rem 1rem;
+}
+
+#header h1 {
+  font-size: 2.1rem;
+  padding: 0.5rem 0.6rem 1rem;
+  margin: 0;
+}
+
+#footer {
+  border-radius: 1rem 1rem 0 0;
+  margin-top: auto;
+}
+
+#footer p {
+  font-size: 0.9rem;
+  padding: 0.7rem 0.7rem;
+  margin: 0;
+}
+
+.container {
+  width: 90vw;
+  max-width: 600px;
+  /* border: 2px solid white; */
+  border-radius: 1rem;
+  margin: 0 auto;
+  background-color: var(--content-background-color);
+}
+
+.content-wrapper {
+  padding: 4rem 3rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.primary-heading {
+  color: var(--variable-text-color);
+}
+
+.secondary-heading {
+  color: var(--main-green-color);
+}
+
+.content-wrapper h2 {
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+.subheading {
+  font-size: 1.4rem;
+  margin: 1rem 0 0;
+  color: var(--light-gray-color);
+}
+
+.content-wrapper button {
+  cursor: pointer;
+  padding: 0.6rem 1rem;
+  margin-top: 3.5rem;
+  background-color: var(--secondary-green-color);
+  align-self: start;
+  color: white;
+  border: none;
+  border-radius: 0.3rem;
+  font-size: 1.2rem;
+  font-weight: 400;
+  font-family: inherit;
+}
+
+#display-results {
+  display: none;
+  margin: 0;
+}
+
+.section-divider {
+  border-top: 1px solid var(--divider-color);
+}
+
+#passwords-wrapper {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.password-box {
+  width: 47%;
+  background-color: var(--password-box-color);
+  border-radius: 0.3rem;
+}
+
+.show-password {
+  cursor: pointer;
+  color: var(--password-text-color);
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin: 0;
+  text-align: center;
+  padding: 0.6rem 0;
+}
+
+#setting-title {
+  margin-bottom: 1.4rem;
+}
+
+#settings-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.settings-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.8rem 3%;
+}
+
+.setting-text {
+  font-size: 1.13rem;
+  color: var(--light-gray-color);
+  padding: 0;
+  margin: 0;
+}
+
+.checkbox {
+  border: none;
+}
+
+@media screen and (max-width: 490px) {
+  #header h1 {
+    font-size: 1.65rem;
+  }
+  .content-wrapper {
+    padding: 2.5rem 1.5rem;
+  }
+  .content-wrapper h2 {
+    font-size: 1.8rem;
+  }
+  .primary-heading,
+  .secondary-heading,
+  .subheading {
+    text-align: center;
+  }
+  .content-wrapper button {
+    align-self: center;
+  }
+  #passwords-wrapper {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
+  .password-box {
+    width: 100%;
+  }
+  .setting-text {
+    font-size: 0.9rem;
+  }
+}
