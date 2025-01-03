@@ -30,6 +30,8 @@ document.addEventListener("click", (event) => {
     addToCart(event.target.dataset.addId);
   } else if (event.target.id === "remove-cart-item") {
     removeCartItem(event.target.dataset.removeId);
+  } else if (event.target.id === "complete-order-btn") {
+    completeOrder();
   }
 });
 
@@ -63,6 +65,14 @@ const removeCartItem = (id) => {
     existingCartItem.quantity--;
   }
 
+  renderCart();
+};
+
+const completeOrder = () => {
+  // ! Continue functionality one day possibly
+  alert("Order complete!");
+  cart.length = 0;
+  console.log(cart);
   renderCart();
 };
 
