@@ -1,6 +1,7 @@
 import menuArray from "./data.js";
 
 const menuWrapper = document.getElementById("menu-wrapper");
+const pageDivider = `<div class="border-bottom"></div>`;
 
 // Render the menu items
 menuWrapper.innerHTML = menuArray
@@ -16,7 +17,6 @@ menuWrapper.innerHTML = menuArray
           <h3 class="item-price">$${menuItem.price}.00</h3>
         </div>
         <button class="item-add">+</button>
-      </div>
-      <div class="border-bottom"></div>`;
+      </div>`;
   })
-  .join("");
+  .join(pageDivider);
