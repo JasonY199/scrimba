@@ -2,7 +2,6 @@ import menuArray from "./data.js";
 
 const menuWrapper = document.getElementById("menu-wrapper");
 const cartSection = document.getElementById("cart-section");
-const cartWrapper = document.getElementById("cart-wrapper");
 const cartItems = document.getElementById("cart-items");
 const totalPrice = document.getElementById("total-price");
 const pageDivider = `<div class="border-bottom"></div>`;
