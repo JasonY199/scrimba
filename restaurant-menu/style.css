@@ -21,9 +21,12 @@ body {
 
 h1,
 h2,
+h3,
 p {
   margin: 0;
 }
+
+/* Header */
 
 header .container {
   background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
@@ -42,4 +45,67 @@ header .container h1 {
 header .container h2 {
   font-size: 22px;
   margin-top: 5px;
+}
+
+/* Menu Items */
+
+.menu-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.menu-item {
+  display: flex;
+  gap: 20px;
+}
+
+.item-img {
+  font-size: 80px;
+  opacity: 0.7;
+}
+
+.item-desc {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding-bottom: 7px;
+}
+
+.item-name {
+  font-size: 28px;
+}
+
+.item-ingredients {
+  font-size: 16px;
+  color: #8b8b8b;
+  padding-bottom: 7px;
+}
+
+.item-price {
+  font-size: 20px;
+}
+
+.item-add {
+  border-radius: 50%;
+  border: 1px solid #dedede;
+  background-color: white;
+  padding: 5px 17px 9px;
+  align-self: center;
+  font-family: "Inter", serif;
+  font-size: 32px;
+  font-weight: 200;
+  margin-left: auto;
+}
+
+.item-add:hover {
+  background-color: #f8f8f8;
+}
+
+.item-add:active {
+  background-color: #f0f0f0;
+}
+
+.border-bottom {
+  border-bottom: 1px solid #dedede;
+  margin: 45px 0;
 }

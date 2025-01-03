@@ -9,6 +9,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Smythe&display=swap"
+      rel="stylesheet"
+    />
+    <!-- CSS -->
+    <link
       href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Smythe&display=swap"
       rel="stylesheet"
     />
@@ -20,12 +25,25 @@
         <h2>The best burgers and pizzas in town.</h2>
       </div>
     </header>
+
     <main>
       <div class="container">
-        <div id="menu"></div>
-        <div id="order"></div>
-        <div id="checkout"></div>
+        <div id="menu-wrapper">
+          <div class="menu-item">
+            <div class="item-img">🍕</div>
+            <div class="item-desc">
+              <h2 class="item-name">Pizza</h2>
+              <p class="item-ingredients">pepperoni, mushroom, mozzarella</p>
+              <h3 class="item-price">$14</h3>
+            </div>
+            <button class="item-add">+</button>
+          </div>
+          <div class="border-bottom"></div>
+        </div>
       </div>
+
+      <div id="order"></div>
+      <div id="checkout"></div>
     </main>
     <script src="./script.js" type="module"></script>
   </body>
