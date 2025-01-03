@@ -19,6 +19,10 @@ body {
   background-color: white;
 }
 
+.hidden {
+  display: none;
+}
+
 h1,
 h2,
 h3,
@@ -108,4 +112,9 @@ header .container h2 {
 .border-bottom {
   border-bottom: 1px solid #dedede;
   margin: 45px 0;
+}
+
+/* Order details */
+
+#order {
 }
