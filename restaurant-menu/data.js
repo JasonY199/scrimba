@@ -15,9 +15,11 @@ const menuArray = [
   },
   {
     name: "Beer",
-    ingredients: ["grain, hops, yeast, water"],
-    price: 12,
+    ingredients: ["grain", "hops", "yeast", "water"],
+    price: 10,
     emoji: "🍺",
     id: 2,
   },
 ];
+
+export default menuArray;
