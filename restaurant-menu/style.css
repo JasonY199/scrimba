@@ -130,6 +130,12 @@ header .container h2 {
   margin-bottom: 60px;
 }
 
+#cart-items {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
 .cart-item {
   display: flex;
   align-items: center;
@@ -172,17 +178,17 @@ header .container h2 {
   margin: 20px 0;
 }
 
-.cart-total-price {
+.cart-total {
   display: flex;
   align-items: center;
   font-size: 28px;
 }
 
-.cart-total-price p {
+.cart-total p {
   margin-left: auto;
 }
 
-#cart-items button {
+#cart-wrapper button {
   margin-top: 60px;
   margin-bottom: 30px;
   padding: 14px 20px;
@@ -195,6 +201,6 @@ header .container h2 {
   width: 100%;
 }
 
-#cart-items button:hover {
+#cart-wrapper button:hover {
   background-color: #0fc88f;
 }
