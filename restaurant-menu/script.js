@@ -2,6 +2,7 @@ import menuArray from "./data.js";
 
 const menuWrapper = document.getElementById("menu-wrapper");
 const pageDivider = `<div class="border-bottom"></div>`;
+const cart = [];
 
 // Render the menu items
 menuWrapper.innerHTML = menuArray
@@ -23,6 +24,25 @@ menuWrapper.innerHTML = menuArray
 
 document.addEventListener("click", (event) => {
   if (event.target.dataset.id) {
-    console.log("add to cart detected");
+    addToCart(event.target.dataset.id);
   }
 });
+
+const addToCart = (id) => {
+  const menuItem = menuArray.find((item) => item.id === parseInt(id));
+
+  const existingCartItem = cart.find((cartItem) => cartItem.id === menuItem.id);
+
+  if (existingCartItem) {
+    existingCartItem.quantity++;
+  } else {
+    cart.push({
+      id: menuItem.id,
+      name: menuItem.name,
+      price: menuItem.price,
+      quantity: 1,
+    });
+  }
+
+  console.log(cart);
+};
