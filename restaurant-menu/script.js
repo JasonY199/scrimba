@@ -1,6 +1,8 @@
 import menuArray from "./data.js";
 
 const menuWrapper = document.getElementById("menu-wrapper");
+const cartSection = document.getElementById("cart-section");
+const cartWrapper = document.getElementById("cart-wrapper");
 const pageDivider = `<div class="border-bottom"></div>`;
 const cart = [];
 
@@ -44,5 +46,13 @@ const addToCart = (id) => {
     });
   }
 
-  console.log(cart);
+  renderCart();
+};
+
+const renderCart = () => {
+  if (cartSection.classList.contains("hidden")) {
+    cartSection.classList.remove("hidden");
+  }
+
+  // TODO continue here
 };

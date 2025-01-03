@@ -29,8 +29,28 @@
       <div class="container">
         <div id="menu-wrapper"></div>
       </div>
-      <div class="container hidden">
-        <div id="order"></div>
+      <div id="cart-section" class="container">
+        <div id="cart-wrapper">
+          <div class="border-bottom"></div>
+          <h2>Your Order</h2>
+          <div id="cart-items">
+            <div class="cart-item">
+              <h3 class="cart-item-name">Pizza</h3>
+              <p class="cart-item-remove">
+                <a href="#">remove</a>
+              </p>
+              <p class="cart-item-unit-price">$10.00 ea</p>
+              <p class="cart-item-quantity">x 10</p>
+              <p class="cart-item-subtotal">$100.00</p>
+            </div>
+            <div class="cart-divider"></div>
+            <div class="cart-total-price">
+              <h3>Total</h3>
+              <p>$100.00</p>
+            </div>
+            <button>Complete Order</button>
+          </div>
+        </div>
       </div>
       <div id="checkout"></div>
     </main>
