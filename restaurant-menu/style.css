@@ -1,6 +1,46 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   font-family: "Smythe", serif;
   font-weight: 400;
   font-style: normal;
+  background-color: gray;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 30px;
+  background-color: white;
+}
+
+h1,
+h2,
+p {
+  margin: 0;
+}
+
+header .container {
+  /* background-image: url("./images/header.png"); */
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url("./images/header.png");
+  background-size: cover;
+  color: white;
+  padding-top: 45px;
+  padding-bottom: 55px;
+  background-position: center 65%;
+}
+
+header .container h1 {
+  font-size: 39px;
+}
+
+header .container h2 {
+  font-size: 22px;
+  margin-top: 5px;
 }
