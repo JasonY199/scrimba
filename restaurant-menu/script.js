@@ -16,7 +16,7 @@ menuWrapper.innerHTML = menuArray
           </p>
           <h3 class="item-price">$${menuItem.price}.00</h3>
         </div>
-        <button class="item-add">+</button>
+        <button class="item-add" data-id="${menuItem.id}">+</button>
       </div>`;
   })
   .join(pageDivider);
