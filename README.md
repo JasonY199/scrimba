@@ -4,6 +4,8 @@ This repository contains various guided projects completed as part of the **Scri
 
 ## Projects
 
+Click on the project name to view more details
+
 - [Asheville Homepage](asheville-homepage)
 
   - Live Demo: [click here](https://scrimba.jasony.dev/asheville-homepage/)
@@ -21,5 +23,13 @@ This repository contains various guided projects completed as part of the **Scri
   - Live Demo: [click here](https://scrimba.jasony.dev/password-generator/)
   - A JavaScript-based password generator with customizable options.
   - Focus: Event listeners, JavaScript logic, and user interaction.
+
+- [Restaurant Menu](restaurant-menu)
+
+  - Live Demo: [click here](https://scrimba.jasony.dev/restaurant-menu/)
+  - Simple restaurant menu app with filtering options using HTML, CSS, and JavaScript.
+  - Focus: DOM manipulation, dynamic content, and more advanced JavaScript array methods.
+
+## Thanks for visiting
 
 Explore the individual folders to see more details about each project!
