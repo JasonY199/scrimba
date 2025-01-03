@@ -29,6 +29,8 @@ menuWrapper.innerHTML = menuArray
 document.addEventListener("click", (event) => {
   if (event.target.dataset.addId) {
     addToCart(event.target.dataset.addId);
+  } else if (event.target.id === "remove-cart-item") {
+    removeCartItem(event.target.dataset.removeId);
   }
 });
 
@@ -46,6 +48,20 @@ const addToCart = (id) => {
       price: menuItem.price,
       quantity: 1,
     });
+  }
+
+  renderCart();
+};
+
+const removeCartItem = (id) => {
+  const existingCartItem = cart.find(
+    (cartItem) => cartItem.id === parseInt(id)
+  );
+
+  if (existingCartItem.quantity === 1) {
+    cart.splice(cart.indexOf(existingCartItem), 1);
+  } else {
+    existingCartItem.quantity--;
   }
 
   renderCart();
