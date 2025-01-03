@@ -20,3 +20,9 @@ menuWrapper.innerHTML = menuArray
       </div>`;
   })
   .join(pageDivider);
+
+document.addEventListener("click", (event) => {
+  if (event.target.dataset.id) {
+    console.log("add to cart detected");
+  }
+});
