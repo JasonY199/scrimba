@@ -94,7 +94,7 @@ const renderCart = () => {
       <div class="cart-item">
         <h3 class="cart-item-name">${cartItem.name}</h3>
         <p class="cart-item-remove">
-          <a href="#" id="remove-cart-item" data-remove-id="${
+          <a href="#cart-section" id="remove-cart-item" data-remove-id="${
             cartItem.id
           }">remove</a>
         </p>
