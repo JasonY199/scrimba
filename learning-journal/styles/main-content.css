@@ -50,7 +50,7 @@
 .about-me-section .container {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 1.4rem;
 }
 
 .profile-img {
@@ -65,14 +65,11 @@
 
 .profile-about h2 {
   font-size: 2rem;
+  line-height: 1.2em;
 }
 
 .profile-about p {
   font-size: 1rem;
-}
-
-.profile-about h2,
-.profile-about p {
   line-height: 1.7em;
 }
 
