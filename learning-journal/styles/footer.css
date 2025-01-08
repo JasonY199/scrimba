@@ -1,0 +1,17 @@
+footer {
+  color: var(--text-color-secondary);
+  text-align: center;
+}
+
+footer h2,
+footer p {
+  font-size: 0.75rem;
+}
+
+footer h2 {
+  font-weight: 700;
+}
+
+footer p {
+  font-weight: 400;
+}

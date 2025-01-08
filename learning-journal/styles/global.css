@@ -15,15 +15,17 @@ body {
     "main"
     "foot";
   min-height: 100vh;
-  font-family: "Source Code Pro", serif;
+  font-family: "Source Sans 3", serif;
 }
 
-/* Utility Selectors */
-
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 1.3rem; /* Horizontal padding */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
 }
 
 /* Main Site Layout Sections */
@@ -43,4 +45,12 @@ footer {
   grid-area: foot;
   background-color: var(--bg-color-footer);
   padding: 1.2rem 0; /* Vertical padding */
+}
+
+/* Utility Selectors */
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.3rem; /* Horizontal padding */
 }

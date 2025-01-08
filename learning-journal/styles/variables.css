@@ -2,6 +2,8 @@
   /* Text Colors */
   --text-color-primary: #000000;
   --text-color-secondary: #ffffff;
+  --text-color-footer-primary: #ececec;
+  --text-color-footer-secondary: #d7d7d7;
   /* Background Colors */
   --bg-color-header: #ffffff;
   --bg-color-main: #fafafa;
