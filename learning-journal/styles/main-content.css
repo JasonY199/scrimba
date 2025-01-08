@@ -1,0 +1,47 @@
+/* Hero Section */
+
+.hero-section {
+  margin-top: -1.5rem; /* Does not need whitespace */
+  background-image: url("../images/hero-image.png");
+  background-size: cover;
+  background-position: center;
+  position: relative; /* Added for the overlay */
+  color: var(--text-color-secondary);
+}
+
+.hero-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4); /* Dark filter */
+  z-index: 1;
+}
+
+.hero-section .container {
+  padding-top: 5.5rem;
+  padding-bottom: 1.6rem;
+  position: relative;
+  z-index: 2;
+}
+
+.hero-date {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+}
+
+.hero-title {
+  font-size: 2rem;
+}
+
+.hero-description {
+  font-size: 1rem;
+}
+
+/* Blogs Section */
+
+.blogs-section {
+  padding: 1rem 0; /* Vertical padding */
+}
