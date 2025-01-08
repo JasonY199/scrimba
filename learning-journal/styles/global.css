@@ -26,13 +26,21 @@ body {
   padding: 0 1.3rem; /* Horizontal padding */
 }
 
-/* ! Move out later */
+/* Main Site Layout Sections */
+
+header {
+  grid-area: head;
+  background-color: var(--bg-color-header);
+  padding: 1.05rem 0; /* Vertical padding */
+}
 
 main {
   grid-area: main;
-  background-color: lightgray;
+  background-color: var(--bg-color-main);
+  padding: 1.5rem 0; /* Vertical padding */
 }
 footer {
   grid-area: foot;
-  background-color: darkslategrey;
+  background-color: var(--bg-color-footer);
+  padding: 1.2rem 0; /* Vertical padding */
 }

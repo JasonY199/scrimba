@@ -3,5 +3,7 @@
   --text-color-primary: #000000;
   --text-color-secondary: #ffffff;
   /* Background Colors */
-  --bg-color-nav: #ffffff;
+  --bg-color-header: #ffffff;
+  --bg-color-main: #fafafa;
+  --bg-color-footer: #202020;
 }
