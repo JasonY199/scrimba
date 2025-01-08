@@ -1,4 +1,4 @@
-/* Hero Section */
+/* Hero section */
 
 .hero-section {
   margin-top: -1.5rem; /* Does not need whitespace */
@@ -40,8 +40,10 @@
   font-size: 1rem;
 }
 
-/* Blogs Section */
+/* Blogs section */
 
 .blogs-section {
   padding: 1rem 0; /* Vertical padding */
 }
+
+/* About Me section */
