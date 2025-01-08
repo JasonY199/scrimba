@@ -8,3 +8,8 @@
   margin: 0;
   padding: 0;
 }
+
+body {
+  display: grid;
+  min-height: 100vh;
+}
