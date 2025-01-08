@@ -1,0 +1,40 @@
+header {
+  grid-area: head;
+  background-color: var(--bg-color-nav);
+  padding: 1.05rem 0; /* Vertical padding */
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Combined selectors */
+
+.logo a,
+nav ul a {
+  text-decoration: none;
+  color: var(--text-color-primary);
+}
+
+/* Logo specific */
+
+.logo img {
+  width: 24px;
+  height: 24px;
+}
+
+.logo a {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+/* Navigation specific */
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 1rem;
+}
