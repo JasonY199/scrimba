@@ -30,6 +30,12 @@ Click on the project name to view more details
   - Simple restaurant menu app with filtering options using HTML, CSS, and JavaScript.
   - Focus: DOM manipulation, dynamic content, and more advanced JavaScript array methods.
 
+- [My Learning Journal](my-learning-journal)
+
+  - Live Demo: [click here](https://scrimba.jasony.dev/my-learning-journal/) _(Mobile layout only)_
+  - Uncompleted project, may come back later to rebuild with React. Made most of the mobile layout, and did not start on tablet and desktop layouts. (I understand how to do this part, just too much time and effort for a project that I don't plan to use and want to move on in the course to get to the more interesting tools to use for my projects, like **tailwindcss, react, etc.**)
+  - Focus: Mobile-first design, responsive layout, and CSS grid. Also, played around with breaking the project up into smaller components.
+
 ## Thanks for visiting
 
 Explore the individual folders to see more details about each project!
