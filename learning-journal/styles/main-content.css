@@ -1,6 +1,6 @@
 /* Hero section */
 
-.hero-section {
+#hero-section {
   margin-top: -1.5rem; /* Does not need whitespace */
   background-image: url("../images/hero-image.png");
   background-size: cover;
@@ -9,7 +9,7 @@
   color: var(--text-color-secondary);
 }
 
-.hero-section::before {
+#hero-section::before {
   content: "";
   position: absolute;
   top: 0;
@@ -20,7 +20,7 @@
   z-index: 1;
 }
 
-.hero-section .container {
+#hero-section .container {
   padding-top: 5.5rem;
   padding-bottom: 1.6rem;
   position: relative;
