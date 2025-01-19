@@ -1,9 +1,11 @@
 import React from "react";
-import Header from "./components/Header/Header";
-import Status from "./components/Status/Status";
-import LanguageChips from "./components/LanguageChips/LanguageChips";
-import WordDisplay from "./components/WordDisplay/WordDisplay";
-import Keyboard from "./components/Keyboard/Keyboard";
+import {
+  Header,
+  Status,
+  LanguageChips,
+  WordDisplay,
+  Keyboard,
+} from "./components";
 
 function App() {
   const [currentWord] = React.useState("react");
