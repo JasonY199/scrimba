@@ -1,4 +1,4 @@
-.status {
+.game-status {
   border-radius: var(--border-radius);
   width: 90%;
   font-weight: 500;
@@ -11,11 +11,11 @@
   flex-direction: column;
 }
 
-.status > h2 {
+.game-status > h2 {
   font-size: 1.25rem;
 }
 
-.status > p {
+.game-status > p {
   font-size: 1rem;
 }
 
