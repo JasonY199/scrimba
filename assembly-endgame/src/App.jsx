@@ -5,6 +5,7 @@ import {
   LanguageChips,
   WordDisplay,
   Keyboard,
+  NewGame,
 } from "./components";
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
       <LanguageChips />
       <WordDisplay currentWord={currentWord} />
       <Keyboard />
+      <NewGame />
     </>
   );
 }

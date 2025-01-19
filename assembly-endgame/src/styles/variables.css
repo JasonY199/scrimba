@@ -10,6 +10,7 @@
   --color-purple: #7a5ea7;
   --color-dark-yellow: #fcba29;
   --color-white-gray: #d7d7d7;
+  --color-baby-blue: #11b5e5;
 
   /* Background Colors */
   --color-background-app: var(--color-dark);
@@ -18,6 +19,7 @@
   --color-status-wrong: var(--color-purple);
   --color-current-word: var(--color-darker-gray);
   --color-keyboard-default: var(--color-dark-yellow);
+  --color-button-new-game: var(--color-baby-blue);
 
   /* Text Colors */
   --color-text-game-title: var(--color-pale-yellow);
@@ -25,8 +27,10 @@
   --color-text-status: var(--color-pale-yellow);
   --color-text-current-word: var(--color-pale-yellow);
   --color-text-keyboard: var(--color-black);
+  --color-text-button-new-game: var(--color-dark);
 
   /* Borders */
   --border-radius: 0.25rem;
   --color-border-keyboard: var(--color-white-gray);
+  --color-border-new-game: var(--color-white-gray);
 }

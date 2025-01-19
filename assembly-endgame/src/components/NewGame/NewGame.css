@@ -1,0 +1,10 @@
+.new-game {
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: var(--color-text-button-new-game);
+  background-color: var(--color-button-new-game);
+  border: 1px solid var(--color-border-new-game);
+  border-radius: var(--border-radius);
+  padding: 0.5rem 4rem;
+  cursor: pointer;
+}
