@@ -8,11 +8,16 @@
 }
 
 body {
-  background: var(--color-background);
+  background: var(--color-background-app);
   font-family: "Hanken Grotesk", Arial, sans-serif;
   height: 100vh;
-  display: flex;
-  justify-content: center;
   padding: 4rem 2rem;
   line-height: 1.5;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.2rem;
 }
