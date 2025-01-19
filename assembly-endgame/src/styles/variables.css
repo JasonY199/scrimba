@@ -1,12 +1,15 @@
 :root {
   /* General Colors */
   --color-dark: #282726;
+  --color-black: #1e1e1e;
   --color-pale-yellow: #f9f4da;
   --color-light-gray: #8e8e8e;
   --color-darker-gray: #323232;
   --color-light-green: #10a95b;
   --color-bright-red: #ba2a2a;
   --color-purple: #7a5ea7;
+  --color-dark-yellow: #fcba29;
+  --color-white-gray: #d7d7d7;
 
   /* Background Colors */
   --color-background-app: var(--color-dark);
@@ -14,13 +17,16 @@
   --color-status-lose: var(--color-bright-red);
   --color-status-wrong: var(--color-purple);
   --color-current-word: var(--color-darker-gray);
+  --color-keyboard-default: var(--color-dark-yellow);
 
   /* Text Colors */
   --color-text-game-title: var(--color-pale-yellow);
   --color-text-game-description: var(--color-light-gray);
   --color-text-status: var(--color-pale-yellow);
   --color-text-current-word: var(--color-pale-yellow);
+  --color-text-keyboard: var(--color-black);
 
   /* Borders */
   --border-radius: 0.25rem;
+  --color-border-keyboard: var(--color-white-gray);
 }

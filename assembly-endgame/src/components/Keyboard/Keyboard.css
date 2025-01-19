@@ -1,0 +1,17 @@
+section.keyboard-elements {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.4rem;
+}
+
+section.keyboard-elements > button {
+  color: var(--color-text-keyboard);
+  background-color: var(--color-keyboard-default);
+  border: 1px solid var(--color-border-keyboard);
+  border-radius: var(--border-radius);
+  font-size: 1rem;
+  font-weight: 600;
+  width: 2.5rem;
+  height: 2.5rem;
+}
