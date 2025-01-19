@@ -1,0 +1,15 @@
+section.language-chips {
+  max-width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+section.language-chips > div {
+  padding: 0.25rem 0.5rem;
+  border-radius: var(--border-radius);
+  font-weight: 700;
+  font-size: 0.85rem;
+}

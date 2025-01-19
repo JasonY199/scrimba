@@ -9,6 +9,7 @@ section.game-status {
   display: flex;
   justify-content: center;
   flex-direction: column;
+  margin-top: -0.8rem;
 }
 
 section.game-status > h2 {
