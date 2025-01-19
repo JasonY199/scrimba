@@ -19,14 +19,14 @@ section.game-status > p {
   font-size: 1rem;
 }
 
-.win {
+section.game-status.win {
   background-color: var(--color-status-win);
 }
 
-.lose {
+section.game-status.lose {
   background-color: var(--color-status-lose);
 }
 
-.wrong {
+section.game-status.wrong {
   background-color: var(--color-status-wrong);
 }
