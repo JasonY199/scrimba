@@ -3,6 +3,7 @@
   --color-dark: #282726;
   --color-pale-yellow: #f9f4da;
   --color-light-gray: #8e8e8e;
+  --color-darker-gray: #323232;
   --color-light-green: #10a95b;
   --color-bright-red: #ba2a2a;
   --color-purple: #7a5ea7;
@@ -12,11 +13,13 @@
   --color-status-win: var(--color-light-green);
   --color-status-lose: var(--color-bright-red);
   --color-status-wrong: var(--color-purple);
+  --color-current-word: var(--color-darker-gray);
 
   /* Text Colors */
   --color-text-game-title: var(--color-pale-yellow);
   --color-text-game-description: var(--color-light-gray);
   --color-text-status: var(--color-pale-yellow);
+  --color-text-current-word: var(--color-pale-yellow);
 
   /* Borders */
   --border-radius: 0.25rem;

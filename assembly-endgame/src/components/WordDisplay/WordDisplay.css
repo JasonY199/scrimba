@@ -1,0 +1,17 @@
+section.current-word {
+  display: flex;
+  gap: 0.15rem;
+}
+
+section.current-word > span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--color-text-current-word);
+  background-color: var(--color-darker-gray);
+  height: 2.5rem;
+  width: 2.5rem;
+  border-bottom: 0.1rem solid var(--color-pale-yellow);
+  font-weight: 700;
+  font-size: 1.125rem;
+}

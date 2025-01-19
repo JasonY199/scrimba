@@ -5,7 +5,7 @@ import LanguageChips from "./components/LanguageChips/LanguageChips";
 import WordDisplay from "./components/WordDisplay/WordDisplay";
 
 function App() {
-  const [currentWord] = React.useState("React");
+  const [currentWord] = React.useState("react");
 
   return (
     <>
