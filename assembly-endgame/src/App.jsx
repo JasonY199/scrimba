@@ -10,6 +10,15 @@ import {
 
 function App() {
   const [currentWord] = React.useState("react");
+  const [guessedLetters, setGuessedLetters] = React.useState([]);
+
+  function handleGuess(pressedLetter) {
+    setGuessedLetters((prevLetters) =>
+      prevLetters.includes(pressedLetter)
+        ? prevLetters
+        : [...prevLetters, pressedLetter]
+    );
+  }
 
   return (
     <>
@@ -17,7 +26,7 @@ function App() {
       <Status />
       <LanguageChips />
       <WordDisplay currentWord={currentWord} />
-      <Keyboard />
+      <Keyboard handleGuess={handleGuess} />
       <NewGame />
     </>
   );
