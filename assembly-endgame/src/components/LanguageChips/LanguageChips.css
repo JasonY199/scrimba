@@ -7,7 +7,7 @@ section.language-chips {
   gap: 0.25rem;
 }
 
-section.language-chips > div {
+section.language-chips > span {
   padding: 0.25rem 0.5rem;
   border-radius: var(--border-radius);
   font-weight: 700;
