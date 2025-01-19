@@ -1,0 +1,23 @@
+:root {
+  /* General Colors */
+  --color-dark: #282726;
+
+  /* Background Colors */
+  --color-background: var(--color-dark);
+
+  /* Text Colors */
+  --color-text-game-title: #f9f4da;
+  --color-text-game-description: #8e8e8e;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: inherit;
+}
+
+body {
+  background: var(--color-background);
+  font-family: "Hanken Grotesk", Arial, sans-serif;
+}
