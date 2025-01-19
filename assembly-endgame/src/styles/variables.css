@@ -4,10 +4,14 @@
   --color-pale-yellow: #f9f4da;
   --color-light-gray: #8e8e8e;
   --color-light-green: #10a95b;
+  --color-bright-red: #ba2a2a;
+  --color-purple: #7a5ea7;
 
   /* Background Colors */
   --color-background-app: var(--color-dark);
   --color-status-win: var(--color-light-green);
+  --color-status-lose: var(--color-bright-red);
+  --color-status-wrong: var(--color-purple);
 
   /* Text Colors */
   --color-text-game-title: var(--color-pale-yellow);
