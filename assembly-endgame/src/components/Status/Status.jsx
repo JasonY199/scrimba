@@ -18,7 +18,7 @@ function Status(props) {
     renderText = (
       <>
         <h2>Game over!</h2>
-        <p>You lose! Better start learning Assembly 😭</p>
+        <p>Better start learning Assembly 😭</p>
       </>
     );
   } else if (props.isGameWon) {
