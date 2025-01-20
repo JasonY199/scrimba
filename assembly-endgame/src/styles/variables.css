@@ -6,7 +6,9 @@
   --color-light-gray: #8e8e8e;
   --color-darker-gray: #323232;
   --color-light-green: #10a95b;
+  --color-pale-green: #10a95b;
   --color-bright-red: #ba2a2a;
+  --color-pale-red: #ec5d49;
   --color-purple: #7a5ea7;
   --color-dark-yellow: #fcba29;
   --color-white-gray: #d7d7d7;
@@ -19,6 +21,8 @@
   --color-status-wrong: var(--color-purple);
   --color-current-word: var(--color-darker-gray);
   --color-keyboard-default: var(--color-dark-yellow);
+  --color-keyboard-correct: var(--color-pale-green);
+  --color-keyboard-wrong: var(--color-pale-red);
   --color-button-new-game: var(--color-baby-blue);
 
   /* Text Colors */

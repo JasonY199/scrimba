@@ -26,7 +26,11 @@ function App() {
       <Status />
       <LanguageChips />
       <WordDisplay currentWord={currentWord} />
-      <Keyboard handleGuess={handleGuess} />
+      <Keyboard
+        handleGuess={handleGuess}
+        guessedLetters={guessedLetters}
+        currentWord={currentWord}
+      />
       <NewGame />
     </>
   );

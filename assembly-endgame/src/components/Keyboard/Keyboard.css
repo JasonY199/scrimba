@@ -7,7 +7,6 @@ section.keyboard-elements {
 
 section.keyboard-elements > button {
   color: var(--color-text-keyboard);
-  background-color: var(--color-keyboard-default);
   border: 1px solid var(--color-border-keyboard);
   border-radius: var(--border-radius);
   font-size: 1rem;
@@ -15,4 +14,16 @@ section.keyboard-elements > button {
   width: 2.5rem;
   height: 2.5rem;
   cursor: pointer;
+}
+
+section.keyboard-elements > button.default {
+  background-color: var(--color-keyboard-default);
+}
+
+section.keyboard-elements > button.correct {
+  background-color: var(--color-keyboard-correct);
+}
+
+section.keyboard-elements > button.wrong {
+  background-color: var(--color-keyboard-wrong);
 }
