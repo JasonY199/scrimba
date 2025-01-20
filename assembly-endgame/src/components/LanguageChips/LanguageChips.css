@@ -12,4 +12,21 @@ section.language-chips > span {
   border-radius: var(--border-radius);
   font-weight: 700;
   font-size: 0.85rem;
+  position: relative;
+}
+
+/* Dimmed overlay with skull on "lost" languages */
+section.language-chips > span.lost::before {
+  content: "💀";
+  border-radius: var(--border-radius);
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  font-size: 0.85rem;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.7);
 }

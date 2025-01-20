@@ -30,7 +30,7 @@ function App() {
     <>
       <Header />
       <Status />
-      <LanguageChips />
+      <LanguageChips wrongGuessCount={wrongGuessCount} />
       <WordDisplay guessedLetters={guessedLetters} currentWord={currentWord} />
       <Keyboard
         handleGuess={handleGuess}
