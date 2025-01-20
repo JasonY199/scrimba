@@ -15,3 +15,7 @@ section.current-word > span {
   font-weight: 700;
   font-size: 1.125rem;
 }
+
+section.current-word > span.red-text {
+  color: var(--color-text-word-missed);
+}

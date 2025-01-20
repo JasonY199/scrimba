@@ -33,6 +33,7 @@
   --color-text-game-description: var(--color-light-gray);
   --color-text-status: var(--color-pale-yellow);
   --color-text-current-word: var(--color-pale-yellow);
+  --color-text-word-missed: var(--color-pale-red);
   --color-text-keyboard: var(--color-black);
   --color-text-button-new-game: var(--color-dark);
 

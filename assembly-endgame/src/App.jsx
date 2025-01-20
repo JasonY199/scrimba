@@ -70,6 +70,7 @@ function App() {
         currentWord={currentWord}
         numGuessesLeft={numGuessesLeft}
         lastGuessedLetter={lastGuessedLetter}
+        isGameLost={isGameLost}
       />
       <Keyboard
         handleGuess={handleGuess}
