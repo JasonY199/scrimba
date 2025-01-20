@@ -7,17 +7,32 @@ import {
   Keyboard,
   NewGame,
 } from "./components";
+import languages from "./data/languages";
 
 function App() {
+  // State values
   const [currentWord] = React.useState("react");
   const [guessedLetters, setGuessedLetters] = React.useState([]);
 
+  // Derived values
   const wrongGuessCount = guessedLetters.reduce(
-    (count, currentLetter) =>
-      currentWord.includes(currentLetter) ? count : count + 1,
+    (count, current) => (currentWord.includes(current) ? count : count + 1),
     0
   );
 
+  const isGameOver = () => {
+    if (wrongGuessCount > languages.length - 2) {
+      return true;
+    } else if (
+      currentWord.split("").every((letter) => guessedLetters.includes(letter))
+    ) {
+      return true;
+    } else {
+      return false;
+    }
+  };
+
+  // Event handlers
   function handleGuess(pressedLetter) {
     setGuessedLetters((prevLetters) =>
       prevLetters.includes(pressedLetter)
@@ -37,7 +52,7 @@ function App() {
         guessedLetters={guessedLetters}
         currentWord={currentWord}
       />
-      <NewGame />
+      <NewGame isGameOver={isGameOver()} />
     </>
   );
 }
