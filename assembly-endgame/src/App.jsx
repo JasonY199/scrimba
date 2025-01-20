@@ -14,7 +14,9 @@ import getRandomWord from "./utils/wordUtils";
 
 function App() {
   // State values
-  const [currentWord] = React.useState(() => getRandomWord(words));
+  const [currentWord, setCurrentWord] = React.useState(() =>
+    getRandomWord(words)
+  );
   const [guessedLetters, setGuessedLetters] = React.useState([]);
 
   // Derived values
@@ -39,6 +41,11 @@ function App() {
         ? prevLetters
         : [...prevLetters, pressedLetter]
     );
+  }
+
+  function handleNewGame() {
+    setCurrentWord(getRandomWord(words));
+    setGuessedLetters([]);
   }
 
   return (
@@ -70,7 +77,7 @@ function App() {
         currentWord={currentWord}
         isGameOver={isGameOver}
       />
-      <NewGame isGameOver={isGameOver} />
+      <NewGame isGameOver={isGameOver} handleNewGame={handleNewGame} />
     </>
   );
 }
