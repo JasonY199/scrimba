@@ -25,7 +25,7 @@ function App() {
       <Header />
       <Status />
       <LanguageChips />
-      <WordDisplay currentWord={currentWord} />
+      <WordDisplay guessedLetters={guessedLetters} currentWord={currentWord} />
       <Keyboard
         handleGuess={handleGuess}
         guessedLetters={guessedLetters}
