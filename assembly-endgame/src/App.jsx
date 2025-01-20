@@ -14,7 +14,7 @@ import getRandomWord from "./utils/wordUtils";
 
 function App() {
   // State values
-  const [currentWord] = React.useState(getRandomWord(words));
+  const [currentWord] = React.useState(() => getRandomWord(words));
   const [guessedLetters, setGuessedLetters] = React.useState([]);
 
   // Derived values
