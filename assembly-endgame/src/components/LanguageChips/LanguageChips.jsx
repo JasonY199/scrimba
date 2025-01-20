@@ -5,14 +5,12 @@ import language from "../../data/languages.js";
 
 function LanguageChips(props) {
   const languageElements = language.map((lang, index) => {
-    const isLost = props.wrongGuessCount > index;
-
+    const isLanguageLost = props.wrongGuessCount > index;
+    const className = clsx(isLanguageLost && "lost");
     const styles = {
       color: lang.color,
       backgroundColor: lang.backgroundColor,
     };
-
-    const className = clsx({ lost: isLost });
 
     return (
       <span key={lang.name} style={styles} className={className}>
