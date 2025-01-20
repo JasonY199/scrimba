@@ -12,6 +12,12 @@ function App() {
   const [currentWord] = React.useState("react");
   const [guessedLetters, setGuessedLetters] = React.useState([]);
 
+  const wrongGuessCount = guessedLetters.reduce(
+    (count, currentLetter) =>
+      currentWord.includes(currentLetter) ? count : count + 1,
+    0
+  );
+
   function handleGuess(pressedLetter) {
     setGuessedLetters((prevLetters) =>
       prevLetters.includes(pressedLetter)
