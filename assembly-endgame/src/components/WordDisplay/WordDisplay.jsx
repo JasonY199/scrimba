@@ -13,6 +13,8 @@ function WordDisplay(props) {
 WordDisplay.propTypes = {
   currentWord: PropTypes.string.isRequired,
   guessedLetters: PropTypes.arrayOf(PropTypes.string).isRequired,
+  numGuessesLeft: PropTypes.number.isRequired,
+  lastGuessedLetter: PropTypes.string,
 };
 
 export default WordDisplay;

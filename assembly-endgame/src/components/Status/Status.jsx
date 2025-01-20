@@ -50,7 +50,13 @@ function Status(props) {
   }
 
   return (
-    <section className={`game-status ${gameStateClass}`}>{renderText}</section>
+    <section
+      aria-live="polite"
+      role="status"
+      className={`game-status ${gameStateClass}`}
+    >
+      {renderText}
+    </section>
   );
 }
 

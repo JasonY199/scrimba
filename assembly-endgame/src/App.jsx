@@ -6,6 +6,7 @@ import {
   WordDisplay,
   Keyboard,
   NewGame,
+  ScreenReaderStatus,
 } from "./components";
 import languages from "./data/languages";
 
@@ -15,6 +16,7 @@ function App() {
   const [guessedLetters, setGuessedLetters] = React.useState([]);
 
   // Derived values
+  const numGuessesLeft = languages.length - 1;
   const wrongGuessCount = guessedLetters.reduce(
     (count, current) => (currentWord.includes(current) ? count : count + 1),
     0
@@ -22,7 +24,7 @@ function App() {
   const isGameWon = currentWord
     .split("")
     .every((letter) => guessedLetters.includes(letter));
-  const isGameLost = wrongGuessCount >= languages.length - 1;
+  const isGameLost = wrongGuessCount >= numGuessesLeft;
   const isGameOver = isGameWon || isGameLost;
   const lastGuessedLetter = guessedLetters[guessedLetters.length - 1];
   const isLastGuessIncorrect =
@@ -47,8 +49,19 @@ function App() {
         isLastGuessIncorrect={isLastGuessIncorrect}
         wrongGuessCount={wrongGuessCount}
       />
+      <ScreenReaderStatus
+        currentWord={currentWord}
+        guessedLetters={guessedLetters}
+        lastGuessedLetter={lastGuessedLetter}
+        numGuessesLeft={numGuessesLeft}
+      />
       <LanguageChips wrongGuessCount={wrongGuessCount} />
-      <WordDisplay guessedLetters={guessedLetters} currentWord={currentWord} />
+      <WordDisplay
+        guessedLetters={guessedLetters}
+        currentWord={currentWord}
+        numGuessesLeft={numGuessesLeft}
+        lastGuessedLetter={lastGuessedLetter}
+      />
       <Keyboard
         handleGuess={handleGuess}
         guessedLetters={guessedLetters}

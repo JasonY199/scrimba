@@ -21,6 +21,8 @@ function Keyboard(props) {
         key={letter}
         className={className}
         disabled={props.isGameOver}
+        aria-disabled={props.guessedLetters.includes(letter)}
+        aria-label={`Letter ${letter}`}
       >
         {letter.toUpperCase()}
       </button>
