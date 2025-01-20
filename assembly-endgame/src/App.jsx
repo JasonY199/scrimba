@@ -9,10 +9,12 @@ import {
   ScreenReaderStatus,
 } from "./components";
 import languages from "./data/languages";
+import words from "./data/words";
+import getRandomWord from "./utils/wordUtils";
 
 function App() {
   // State values
-  const [currentWord] = React.useState("react");
+  const [currentWord] = React.useState(getRandomWord(words));
   const [guessedLetters, setGuessedLetters] = React.useState([]);
 
   // Derived values
