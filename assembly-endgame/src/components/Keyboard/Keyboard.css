@@ -16,6 +16,11 @@ section.keyboard-elements > button {
   cursor: pointer;
 }
 
+section.keyboard-elements > button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
 section.keyboard-elements > button.default {
   background-color: var(--color-keyboard-default);
 }
