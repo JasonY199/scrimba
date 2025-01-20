@@ -5,7 +5,7 @@ section.game-status {
   text-align: center;
   padding: 0.4rem;
   color: var(--color-text-status);
-  min-height: 4rem;
+  min-height: 4.5rem;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -18,6 +18,14 @@ section.game-status > h2 {
 
 section.game-status > p {
   font-size: 1rem;
+}
+
+section.game-status.new {
+  background-color: var(--color-status-new);
+}
+
+section.game-status.playing {
+  background-color: var(--color-status-playing);
 }
 
 section.game-status.win {

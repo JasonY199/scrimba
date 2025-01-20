@@ -37,7 +37,11 @@ function App() {
   return (
     <>
       <Header />
-      <Status />
+      <Status
+        isGameLost={isGameLost}
+        isGameWon={isGameWon}
+        guessedLetters={guessedLetters}
+      />
       <LanguageChips wrongGuessCount={wrongGuessCount} />
       <WordDisplay guessedLetters={guessedLetters} currentWord={currentWord} />
       <Keyboard

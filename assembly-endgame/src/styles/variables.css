@@ -13,9 +13,12 @@
   --color-dark-yellow: #fcba29;
   --color-white-gray: #d7d7d7;
   --color-baby-blue: #11b5e5;
+  --color-faded-blue: #1b6f88;
 
   /* Background Colors */
   --color-background-app: var(--color-dark);
+  --color-status-new: var(--color-black);
+  --color-status-playing: var(--color-faded-blue);
   --color-status-win: var(--color-light-green);
   --color-status-lose: var(--color-bright-red);
   --color-status-wrong: var(--color-purple);
