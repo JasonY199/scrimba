@@ -20,6 +20,7 @@ function Keyboard(props) {
         onClick={() => props.handleGuess(letter)}
         key={letter}
         className={className}
+        disabled={props.isGameOver}
       >
         {letter.toUpperCase()}
       </button>
@@ -33,6 +34,7 @@ Keyboard.propTypes = {
   handleGuess: PropTypes.func.isRequired,
   guessedLetters: PropTypes.arrayOf(PropTypes.string).isRequired,
   currentWord: PropTypes.string.isRequired,
+  isGameOver: PropTypes.bool.isRequired,
 };
 
 export default Keyboard;

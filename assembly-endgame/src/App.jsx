@@ -53,6 +53,7 @@ function App() {
         handleGuess={handleGuess}
         guessedLetters={guessedLetters}
         currentWord={currentWord}
+        isGameOver={isGameOver}
       />
       <NewGame isGameOver={isGameOver} />
     </>
