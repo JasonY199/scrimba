@@ -24,8 +24,8 @@ section.game-status.new {
   background-color: var(--color-status-new);
 }
 
-section.game-status.playing {
-  background-color: var(--color-status-playing);
+section.game-status.correct {
+  background-color: var(--color-status-correct);
 }
 
 section.game-status.win {

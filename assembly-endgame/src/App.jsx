@@ -24,6 +24,9 @@ function App() {
     .every((letter) => guessedLetters.includes(letter));
   const isGameLost = wrongGuessCount >= languages.length - 1;
   const isGameOver = isGameWon || isGameLost;
+  const lastGuessedLetter = guessedLetters[guessedLetters.length - 1];
+  const isLastGuessIncorrect =
+    !!lastGuessedLetter && !currentWord.includes(lastGuessedLetter);
 
   // Event handlers
   function handleGuess(pressedLetter) {
@@ -41,6 +44,8 @@ function App() {
         isGameLost={isGameLost}
         isGameWon={isGameWon}
         guessedLetters={guessedLetters}
+        isLastGuessIncorrect={isLastGuessIncorrect}
+        wrongGuessCount={wrongGuessCount}
       />
       <LanguageChips wrongGuessCount={wrongGuessCount} />
       <WordDisplay guessedLetters={guessedLetters} currentWord={currentWord} />

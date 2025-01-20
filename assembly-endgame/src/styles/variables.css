@@ -18,7 +18,7 @@
   /* Background Colors */
   --color-background-app: var(--color-dark);
   --color-status-new: var(--color-black);
-  --color-status-playing: var(--color-faded-blue);
+  --color-status-correct: var(--color-faded-blue);
   --color-status-win: var(--color-light-green);
   --color-status-lose: var(--color-bright-red);
   --color-status-wrong: var(--color-purple);

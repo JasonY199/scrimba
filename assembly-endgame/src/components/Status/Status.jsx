@@ -1,4 +1,6 @@
 import PropTypes from "prop-types";
+import getFarewellText from "./StatusUtils.js";
+import languages from "../../data/languages.js";
 import "./Status.css";
 
 function Status(props) {
@@ -30,12 +32,21 @@ function Status(props) {
       </>
     );
   } else {
-    gameStateClass = "playing";
-    renderText = (
-      <>
-        <h2>Keep going!</h2>
-      </>
-    );
+    if (props.isLastGuessIncorrect) {
+      gameStateClass = "wrong";
+      renderText = (
+        <>
+          <h2>{getFarewellText(languages[props.wrongGuessCount - 1].name)}</h2>
+        </>
+      );
+    } else {
+      gameStateClass = "correct";
+      renderText = (
+        <>
+          <h2>Nice, keep going!</h2>
+        </>
+      );
+    }
   }
 
   return (
@@ -47,6 +58,8 @@ Status.propTypes = {
   isGameLost: PropTypes.bool.isRequired,
   isGameWon: PropTypes.bool.isRequired,
   guessedLetters: PropTypes.arrayOf(PropTypes.string).isRequired,
+  isLastGuessIncorrect: PropTypes.bool.isRequired,
+  wrongGuessCount: PropTypes.number.isRequired,
 };
 
 export default Status;
