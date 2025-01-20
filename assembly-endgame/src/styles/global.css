@@ -11,7 +11,7 @@ body {
   background: var(--color-background-app);
   font-family: "Hanken Grotesk", Arial, sans-serif;
   height: 100vh;
-  padding: 4rem 2rem;
+  padding: 2.5rem 2rem;
   line-height: 1.5;
 }
 
