@@ -19,18 +19,11 @@ function App() {
     (count, current) => (currentWord.includes(current) ? count : count + 1),
     0
   );
-
-  const isGameOver = () => {
-    if (wrongGuessCount > languages.length - 2) {
-      return true;
-    } else if (
-      currentWord.split("").every((letter) => guessedLetters.includes(letter))
-    ) {
-      return true;
-    } else {
-      return false;
-    }
-  };
+  const isGameWon = currentWord
+    .split("")
+    .every((letter) => guessedLetters.includes(letter));
+  const isGameLost = wrongGuessCount >= languages.length - 1;
+  const isGameOver = isGameWon || isGameLost;
 
   // Event handlers
   function handleGuess(pressedLetter) {
@@ -52,7 +45,7 @@ function App() {
         guessedLetters={guessedLetters}
         currentWord={currentWord}
       />
-      <NewGame isGameOver={isGameOver()} />
+      <NewGame isGameOver={isGameOver} />
     </>
   );
 }
