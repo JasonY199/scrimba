@@ -1,4 +1,5 @@
 import React from "react";
+import Confetti from "react-confetti";
 import {
   Header,
   Status,
@@ -50,6 +51,9 @@ function App() {
 
   return (
     <>
+      {isGameWon && (
+        <Confetti recycle={false} numberOfPieces={3000} gravity={0.05} />
+      )}
       <Header />
       <Status
         isGameLost={isGameLost}
