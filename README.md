@@ -38,7 +38,7 @@ Click on the project name to view more details
 
 - [Assembly Endgame](assembly-endgame)
 
-  - Live Demo: [click here](https://scrimba.jasony.dev/assembly-endgame/)
+  - Live Demo: [click here](https://assembly-endgame.jasony.dev)
   - A simple hangman game built using React.
   - Focus: React components, state management, and event handling.
 
