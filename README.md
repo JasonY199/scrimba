@@ -2,6 +2,12 @@
 
 This repository contains various guided projects completed as part of the **Scrimba Frontend Developer Career Path**. Each project demonstrates the application of core frontend development skills, including HTML, CSS, and JavaScript.
 
+## Repository Update (early 2025)
+
+In this repository I was originally combining all my Scrimba projects into one repo. However, with React now, I think it will be a better idea to have a separate repository for each project going forward. Therefore, this repo will not be updated anymore.
+
+**Thus, the stuff in this repo are all the projects up until the Advanced React module.**
+
 ## Projects
 
 Click on the project name to view more details
